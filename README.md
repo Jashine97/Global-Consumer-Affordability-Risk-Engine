@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+📌 Project Structure
+g-care-react/
+│
+├── index.html
+├── package.json
+├── vite.config.js
+│
+├── src/
+│   ├── main.jsx
+│   ├── App.jsx
+│   ├── components/
+│   │   └── GCARE.jsx
+│   ├── assets/
+│   └── utils/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+G-CARE is a modern financial assessment tool designed to help lenders, analysts, and financial professionals understand a customer’s affordability and credit risk in a clean, structured, and globally adaptable way.
 
-## React Compiler
+It combines thoughtful UX, smart financial logic, and global credit-risk principles (inspired by Basel III and IFRS 9) to create a simple but powerful engine that works for any country, any currency, and any financial organisation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+G-CARE is not just a calculator — it is a fully interactive decisioning tool that evaluates income, expenses, debt behaviour, risk signals, and potential restructuring paths. It’s built for real-world use, and it’s designed to give both clarity and direction.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Why I Built G-CARE
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Financial assessments today often feel outdated, overly complicated, or rigid. Many tools are locked to a single country or institution. Others overwhelm users with technical jargon without giving meaningful insights.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+G-CARE was designed to fix that.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The goal was simple:
+
+Make financial assessments universal
+
+Make them visually intuitive
+
+Make them actionable
+
+Make them human
+
+Whether you are a lender, advisor, analyst, or consumer, G-CARE provides clear insight into a client’s financial world and the options available to them.
+
+
